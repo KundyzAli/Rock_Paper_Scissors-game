@@ -1,0 +1,108 @@
+.play {
+    width: 100%;
+
+    position: relative;
+    margin-top: 3.125rem;
+
+    display: flex;
+    flex-direction: column;
+
+    .triangle {
+        position: absolute;
+        align-self: center;
+        margin-top: 4.375rem;
+    }
+
+    .items {
+        display: flex;
+        justify-content: center;
+
+        .icon {
+            height: 160px;
+            width: 160px;
+            border: 1rem solid;
+            border-radius: 50%; 
+            transition: transform .2s;
+
+            &--paper {
+                @include icon($imageP, $paper-gradient);
+                transform: translateX(.5rem);
+
+                &:hover {
+                    transform: translateX(2.5rem) scale(1.1);
+                }
+            }
+
+            &--scissors {
+                @include icon($imageS, $scissors-gradient);
+                transform: translateX(-1.7rem);
+
+                &:hover {
+                    transform: translateX(-1.7rem) scale(1.1);
+                }
+            }
+
+            &--rock {
+                @include icon($imageR, $rock-gradient);
+                transform: translateX(-0.3rem) translateY(13rem);
+
+                &:hover {
+                    transform: translateX(-0.3rem) translateY(13rem) scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .play {
+
+        .triangle {
+            width: 50%;
+        }
+
+        .items {
+    
+            .icon {
+                height: 120px;
+                width: 120px;
+
+                &--paper {
+                    @include icon($imageP, $paper-gradient);
+                    transform: translateX(1.5rem) translateY(1.5rem);
+    
+                    &:hover {
+                        transform: translateX(2.5rem) translateY(1.5rem) scale(1.1);
+                    }
+                }
+
+                &--scissors {
+                    @include icon($imageS, $scissors-gradient);
+                    transform: translateX(-2rem) translateY(1.3rem);
+    
+                    &:hover {
+                        transform: translateX(-2rem) translateY(1.3rem) scale(1.1);
+                    }
+                }
+
+                &--rock {
+                    @include icon($imageR, $rock-gradient);
+                    transform: translateX(-0.3rem) translateY(11rem);
+    
+                    &:hover {
+                        transform: translateX(-0.3rem) translateY(11rem) scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .play {
+
+        .triangle {
+            width: 70%;
+        }
+    }
+}

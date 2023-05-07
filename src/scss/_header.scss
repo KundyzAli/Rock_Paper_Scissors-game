@@ -37,14 +37,22 @@
 
 @media screen and (max-width: 500px) {
     .header {
-        .text {
-            font-size: 2rem;
-        }
-
         .score-box {
             &__score {
                 font-size: 2.5rem;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header {
+        .text {
+            font-size: 1.5rem;
+        }
+
+        .score-box {
+            padding: 0.45rem 2.2rem;
         }
     }
 }

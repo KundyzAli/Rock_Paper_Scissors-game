@@ -27,3 +27,23 @@
         }
     }
 }
+
+@media screen and (max-width: 450px) {
+    
+    .footer {
+
+        .attribution {
+            bottom: 4rem;
+
+            font-size: 8px;
+        }
+
+        button {
+            max-width: 110px;
+            left: 50%;
+            transform: translate(-50%);
+            
+        }
+
+    }
+}

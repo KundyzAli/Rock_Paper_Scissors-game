@@ -132,3 +132,185 @@
         }
     }
 }
+
+@media screen and (max-width: 800px) {
+    .game {
+
+        &__you {
+            
+            margin-right: 1rem;
+
+            .icon {
+                height: 200px;
+                width: 200px;
+            }
+        
+        }
+
+        &__house {
+            margin-left: 1rem;
+
+            .icon {
+                height: 200px;
+                width: 200px;
+            }
+
+            .counter {
+                height: 200px;
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .game {
+
+        &__you {
+
+            .text {
+                font-size: 1rem;
+            }
+
+            .icon {
+                height: 180px;
+                width: 180px;
+            }
+        }
+
+        &__play {
+
+            .text {
+                font-size: 2rem;
+            }
+        }
+
+        &__house {
+
+            .text {
+                font-size: 1rem;
+            }
+
+            .icon {
+                height: 180px;
+                width: 180px;
+            }
+
+            .counter {
+                height: 180px;
+                width: 180px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .game {
+        
+
+        &__you {
+            .icon {
+                height: 150px;
+                width: 150px;
+            }
+        }
+
+        &__play {
+            .text {
+                font-size: 1.5rem;
+            }   
+            
+            .play-again {
+                font-size: 0.5rem;
+            }
+        }
+
+        &__house {
+            .icon {
+                height: 150px;
+                width: 150px;
+            }
+
+            .counter {
+                height: 180px;
+                width: 180px;
+
+                font-size: 5rem;
+            }
+            
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .game {
+
+        &__you {
+            margin-right: 0;
+        }
+
+        &__play {
+            margin: 0 1rem;
+        }
+
+        &__house {
+            margin-left: 0;
+
+            .counter {
+                height: 180px;
+                width: 180px;
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .game {
+
+        &__you {
+            .text {
+                font-size: 10px;
+            }
+
+            .icon {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        &__play {
+            .text {
+                font-size: 1rem;
+            }
+
+            .play-again {
+                font-size: 0.35rem;
+                padding: 10px 8px;
+            }
+        }
+
+        &__house {
+            .text {
+                font-size: 10px;
+            }
+
+            .icon {
+                width: 120px;
+                height: 120px;
+            }
+
+            .counter {
+                width: 120px;
+                height: 120px;
+                margin: 0 1rem;
+
+                font-size: 3rem;
+            }
+        }
+    }
+
+}
